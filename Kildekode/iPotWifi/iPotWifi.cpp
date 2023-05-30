@@ -50,7 +50,7 @@ uint16_t const * iPotWifi::getData() {
 
 		lastReadData[2] = floor( (replyIn16b[2] - 596) / 278.58 );	// Light
 
-		lastReadData[3] = floor(0.25990 * replyIn16b[0] - 465.08);	// Weight
+		lastReadData[3] = floor(0.25990 * replyIn16b[3] - 465.08);	// Weight
 
 	}
 	catch (std::exception& e) {
