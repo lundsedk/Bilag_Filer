@@ -1,0 +1,17 @@
+[Unit]
+Description=iPot GUI
+# Let this service start as the last thing after multi-user boot
+After=multi-user.target
+[Service]
+#Fork service/application
+Type=forking
+#Following may be set
+#User=root
+Requires=connman-hotspot.service
+ExecStart=/bin/sh -c '/home/root/iPot/iPotGUIStart.sh'
+#Restart only on error
+Restart=on-failure
+TimeoutStartSec=infinity
+[Install]
+#Top-level target is multi-user
+WantedBy=multi-user.target

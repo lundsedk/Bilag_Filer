@@ -40,7 +40,7 @@ uint16_t const * iPotWifi::getData() {
 			};
 		}
 
-		const uint16_t humidityLevelCutoffs[4] = {17925, 17165, 16800, 0 };
+		const uint16_t humidityLevelCutoffs[4] = {18125, 17365, 17000, 0 };
 		for (uint8_t i = 0; i<4 ; i++) {
 			if (replyIn16b[1] > humidityLevelCutoffs[i]) {
 				lastReadData[1] = i*33;
@@ -51,7 +51,6 @@ uint16_t const * iPotWifi::getData() {
 		lastReadData[2] = floor( (replyIn16b[2] - 596) / 278.58 );	// Light
 
 		lastReadData[3] = floor(0.25990 * replyIn16b[3] - 465.08);	// Weight
-
 	}
 	catch (std::exception& e) {
 		busy.unlock();
