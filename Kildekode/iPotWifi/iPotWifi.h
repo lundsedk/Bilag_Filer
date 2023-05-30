@@ -10,13 +10,10 @@
 	getData() kan efterfølgende bruges til at opdatere data, og få en reference til denne, således:
 		uint16_t const * returnVal = my_iPotRef.getData();
 	retur-værdierne er alle i uint16, og er som følger:
-		***
-		vægt, givet i g
-		vandtank niveau, givet i procent-intervaller (0, 20, 40, 60, 80, 100)
+		vandtank niveau, givet i 6 procent-intervaller (0, 20, 40, 60, 80, 100)
+		fugtighed, givet i 4 procent-intervaller (0, 33, 66, 99)
 		lys niveau, givet som procent af maksimalt målt lys og minimalt målt lys
-		fugtighed, givet i fire mulige værdier (0,1,2,3), tilsvarende tør, optimal, lidt for våd, druknet
-			(ved 0/tør sker der vanding)
-			***
+		vægt, givet i g
 	hvis der ikke kan oprettes forbindelse til TCP-serveren, returneres istedet en null-pointer
 */
 
