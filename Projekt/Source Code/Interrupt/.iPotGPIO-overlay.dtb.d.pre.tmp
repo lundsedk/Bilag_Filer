@@ -1,0 +1,2 @@
+iPotGPIO-overlay.o: \
+ /home/stud/Projekt/custom_interupt/driver/iPotGPIO-overlay.dts

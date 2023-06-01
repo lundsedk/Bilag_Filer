@@ -1,0 +1,1 @@
+cmd_/home/stud/Projekt/custom_interupt/driver/iPotGPIO.ko := arm-poky-linux-gnueabi-ld -r -EL --build-id  -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds -o /home/stud/Projekt/custom_interupt/driver/iPotGPIO.ko /home/stud/Projekt/custom_interupt/driver/iPotGPIO.o /home/stud/Projekt/custom_interupt/driver/iPotGPIO.mod.o;  true

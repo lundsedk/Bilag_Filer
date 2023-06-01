@@ -1,0 +1,1 @@
+cmd_/home/stud/Projekt/custom_interupt/driver/built-in.a := rm -f /home/stud/Projekt/custom_interupt/driver/built-in.a; arm-poky-linux-gnueabi-ar cDPrST /home/stud/Projekt/custom_interupt/driver/built-in.a 

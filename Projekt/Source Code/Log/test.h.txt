@@ -1,0 +1,96 @@
+#include log.h
+
+#include iostream
+
+using namespace std;
+
+int main() {
+
+    int a, b, c, d;
+
+	Log log;
+
+	 Test setLog method
+	
+    bool lvl = log.isEmpty();
+
+    stdcout  lvl  endl;
+
+    
+
+
+        for (size_t i = 0; i  12  24  600; i++)
+        {
+            int a = rand() % 10;  int b = rand() % 10;  int c = rand() % 10;  int d = rand() % 10;
+
+            a = 10;  Weight 0
+
+            b = 20; WaterLvl 1
+
+            c = 3; Light 2
+
+            d = 4;  Moist 3
+
+            log.setLog({ a,b,c,d });
+        }
+
+
+      auto  latest = log.getLatest(WEIGHT);
+
+
+        stdcout  get latest   latest  endl;
+       
+        
+        auto weekLog = log.getWeek(WEIGHT);
+
+
+
+        stdcout  Week Log  stdendl;
+
+
+        for (size_t i = 0; i  7; i++)
+        {
+            int val = weekLog[i];
+
+            cout  val  endl;
+        }
+
+
+        stdcout  my month   endl;
+
+        auto  mymonth = log.getMonth();
+  
+        for (size_t i = 0; i  mymonth.size(); i++)
+        {
+            int val = mymonth[i][0];
+
+            stdcout  val  endl;
+        }
+
+
+
+       log.logClear();
+
+       latest = log.getLatest(WEIGHT);
+
+
+       stdcout  get latest   latest  endl;
+
+         mymonth = log.getMonth();
+
+       for (size_t i = 0; i  mymonth.size(); i++)
+       {
+           int val = mymonth[i][0];
+
+           stdcout  val  endl;
+       }
+
+
+       
+
+    return 0;
+
+
+
+}
+
